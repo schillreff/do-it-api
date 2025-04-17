@@ -1,6 +1,7 @@
 package dev.leandroschillreff.do_it.dto;
 
-import jakarta.validation.constraints.NotBlank;
+import java.time.LocalDateTime;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,10 +9,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class NoteDTO {
-    @NotBlank(message = "Título não pode estar em branco")
+public class NoteResponseDTO {
+    private Long id;
     private String title;
-
-    @NotBlank(message = "Descrição não pode estar em branco")
     private String description;
+    private LocalDateTime createdAt;
 }

@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class LoginDTO {
-
     @NotBlank(message = "Email não pode estar em branco")
     @Email(message = "Email deve ser válido")
     private String email;
