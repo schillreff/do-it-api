@@ -14,4 +14,5 @@ public class NoteResponseDTO {
     private String title;
     private String description;
     private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 }
