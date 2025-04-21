@@ -37,6 +37,12 @@ public class Note implements Serializable {
     @Column(nullable = false, columnDefinition = "TEXT")
     private String description;
 
+    @Column(name = "is_completed", nullable = false)
+    private boolean isCompleted = false;
+
+    @Column(name = "completed_at")
+    private LocalDateTime completedAt;
+
     @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
 
