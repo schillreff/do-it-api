@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class NoteDTO {
-    @NotBlank(message = "Título não pode estar em branco")
+    @NotBlank(message = "Title cannot be blank")
     private String title;
 
-    @NotBlank(message = "Descrição não pode estar em branco")
+    @NotBlank(message = "Description cannot be blank")
     private String description;
 }
