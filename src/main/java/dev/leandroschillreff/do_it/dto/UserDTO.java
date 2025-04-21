@@ -11,14 +11,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserDTO {
-    @NotBlank(message = "Nome não pode estar em branco")
+    @NotBlank(message = "Name cannot be blank")
     private String name;
 
-    @NotBlank(message = "Email não pode estar em branco")
-    @Email(message = "Email deve ser válido")
+    @NotBlank(message = "Email cannot be blank")
+    @Email(message = "Email must be valid")
     private String email;
 
-    @NotBlank(message = "Senha não pode estar em branco")
-    @Size(min = 6, message = "Senha deve ter pelo menos 6 caracteres")
+    @NotBlank(message = "Password cannot be blank")
+    @Size(min = 8, message = "Password must be at least 8 characters long")
     private String password;
 }
