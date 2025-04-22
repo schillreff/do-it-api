@@ -1,0 +1,33 @@
+# Maven target (build)
+target/
+
+# Arquivos de controle de versão
+.git
+.gitignore
+
+# Configurações de IDEs
+*.iml
+.idea/
+.vscode/
+
+# Arquivos do macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+__MACOSX/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Arquivos de sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Arquivos de ambiente
+.env
