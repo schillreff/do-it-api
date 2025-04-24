@@ -13,6 +13,8 @@ public class NoteResponseDTO {
     private Long id;
     private String title;
     private String description;
+    private boolean isCompleted;
+    private LocalDateTime completedAt;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 }
